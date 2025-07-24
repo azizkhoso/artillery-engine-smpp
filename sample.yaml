@@ -2,7 +2,7 @@ config:
   target: localhost
   phases:
     - duration: 3
-      arrivalRate: 20 # 5 virtual users per second
+      arrivalRate: 5 # 5 virtual users per second
       name: Warm up
 
   engines:
