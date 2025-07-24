@@ -19,7 +19,7 @@ class SmppEngine {
   createScenario(scenarioSpec, ee) {
     const self = this;
     const tasks = scenarioSpec.flow.map((rs) => this.step(rs, ee));
-    console.log(this.target, this.port, this.system_id, this.password);
+
     return function scenario(initialContext, done) {
       ee.emit('started');
       const session = new smpp.Session({
