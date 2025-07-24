@@ -1,15 +1,6 @@
 # Artillery SMPP Engine
 
-Artillery SMPP Engine is an open-source, high-performance SMPP (Short Message Peer-to-Peer) protocol engine designed for scalable SMS messaging applications. Built for reliability and extensibility, it enables developers to integrate, test, and operate SMPP-based messaging systems with ease.
-
-## Features
-
-- SMPP v3.4 protocol support
-- High throughput message handling
-- Configurable connection and session management
-- Pluggable architecture for custom logic
-- Detailed logging and metrics
-- Easy integration with existing systems
+Artillery SMPP Engine is an open-source, high-performance SMPP (Short Message Peer-to-Peer) protocol engine designed as an ArtilleryIO extension. You can use this engine to perform Artillery tests on your SMPP servers.
 
 ## Getting Started
 
@@ -22,8 +13,6 @@ Artillery SMPP Engine is an open-source, high-performance SMPP (Short Message Pe
 
 ```bash
 git clone https://github.com/azizkhoso/artillery-engine-smpp.git
-cd artillery-engine-smpp
-npm install
 ```
 
 ### Usage
@@ -34,7 +23,7 @@ config:
   target: localhost
   phases:
     - duration: 3
-      arrivalRate: 20
+      arrivalRate: 5
       name: Warm up
 
   engines:
@@ -71,16 +60,14 @@ We welcome contributions from the community! Please:
 2. Create a feature branch
 3. Submit a pull request
 
-Read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
 ## License
 
 This project is licensed under the MIT License.
 
 ## Community & Support
 
-- [Issues](https://github.com/your-org/artillery-engine-smpp/issues)
-- [Discussions](https://github.com/your-org/artillery-engine-smpp/discussions)
+- [Issues](https://github.com/azizkhoso/artillery-engine-smpp/issues)
+- [Discussions](https://github.com/azizkhoso/artillery-engine-smpp/discussions)
 
 ---
 
