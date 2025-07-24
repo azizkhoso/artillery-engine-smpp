@@ -1,0 +1,23 @@
+config:
+  target: localhost
+  phases:
+    - duration: 3
+      arrivalRate: 20 # 5 virtual users per second
+      name: Warm up
+
+  engines:
+    smpp: {}
+
+  smpp:
+    port: 2775
+    system_id: "1_1"
+    password: "user@email.com"
+
+scenarios:
+  - name: SMPP Bind and Enquire
+    engine: smpp
+    flow:
+      - bindTransceiver: true
+      - think: 0.1
+      - enquireLink: true
+      - think: 0.1

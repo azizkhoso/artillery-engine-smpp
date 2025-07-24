@@ -1,0 +1,25 @@
+{
+  "name": "artillery-engine-smpp",
+  "version": "1.0.0",
+  "description": "An engine for testing smpp connections using artillery",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "sample": "npx artillery run sample.yaml"
+  },
+  "keywords": [
+    "artillery",
+    "engine",
+    "smpp"
+  ],
+  "author": "azizkhoso586@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "async": "3.2.6",
+    "smpp": "^0.6.0-rc.4"
+  },
+  "devDependencies": {
+    "artillery": "2.0.21",
+    "jest": "30.0.5"
+  }
+}
